@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 const Contact = () => (
     <Layout>
-        <Head title="Kontakt"/>
+        <Head title="Kontakt" />
         <h1>Kontakt</h1>
     </Layout>
 );

@@ -1,6 +1,7 @@
 import React from "react";
+import { graphql, useStaticQuery } from 'gatsby';
+
 import Layout from "../components/layout";
-import {graphql, useStaticQuery} from 'gatsby'
 import Post from "../components/post";
 import Head from "../components/head";
 
@@ -23,17 +24,19 @@ const Home = () => {
       }
     }
   `);
-  const posts = data.allMarkdownRemark.nodes;
 
+  const posts = data.allMarkdownRemark.nodes;
 
   return (
     <Layout>
-      <Head/>
-      {posts.length > 0 ? posts.map(post => (
-        <Post key={post.fields.slug} post={post}/>
-      )) : <h2>Jeszcze nic tu nie ma!</h2>}
+      <Head />
+      <div className="py-6">
+        {posts.length > 0 ? posts.map(post => (
+          <Post key={post.fields.slug} post={post} />
+        )) : <h2>Jeszcze nic tu nie ma!</h2>}
+      </div>
     </Layout>
-  )
+  );
 }
 
 export default Home;

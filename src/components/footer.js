@@ -1,10 +1,12 @@
 import React from 'react';
-import style from './footer.module.scss'
 
 const Footer = () => (
-    <footer className={style.footer}>
-        Stworzono z użyciem <a href="https://www.gatsbyjs.com/">GatsbyJS</a> | 2020
+    <footer className="footer py-6 has-background-black has-text-grey-light">
+        <div className="container has-text-centered">
+            Stworzono z pomocą <a className="has-text-light" href="https://www.gatsbyjs.com/">Gatsby</a> i <a className="has-text-light" href="https://bulma.io/">Bulma</a> | 2021
+
+        </div>
     </footer>
-)
+);
 
 export default Footer;

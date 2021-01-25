@@ -1,16 +1,36 @@
 import React from 'react';
-import style from './navbar.module.scss';
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 
-const Navbar = () => (
-    <nav className={style.navbar}>
-        <Link to="/" className={style.logo}>jaranow<span>.</span>ski</Link>
-        <div>
-            <a href="https://github.com/jakubjaran">github</a>
-            <Link to="/omnie">o mnie</Link>
-            <Link to="/kontakt">kontakt</Link>
-        </div>
-    </nav>
-);
+const Navbar = () => {
 
-export default Navbar
+    const toggleMenu = () => {
+        const navbarMenu = document.getElementById('navbarMenu');
+        const navbarBurger = document.querySelector('.navbar-burger');
+        navbarMenu.classList.toggle('is-active');
+        navbarBurger.classList.toggle('is-active');
+    }
+
+    return (
+        <nav className="navbar is-black px-6 py-2">
+            <div className="container is-max-desktop">
+                <div className="navbar-brand">
+                    <Link className="navbar-item has-text-weight-bold has-text-light" to="/">jaranow<span className="has-text-primary">.</span>ski</Link>
+                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onClick={toggleMenu}>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarMenu" className="navbar-menu">
+                    <div className="navbar-end">
+                        <a className="navbar-item has-text-weight-medium has-text-light" href="https://github.com/jakubjaran">github</a>
+                        <Link className="navbar-item has-text-weight-medium has-text-light" to="/omnie">o mnie</Link>
+                        <Link className="navbar-item has-text-weight-medium has-text-light" to="/kontakt">kontakt</Link>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;

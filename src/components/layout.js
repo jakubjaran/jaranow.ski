@@ -1,21 +1,21 @@
 import React from 'react';
-import '../normalize.css';
-import style from './layout.module.scss';
-import Navbar from "./navbar";
-import "fontsource-open-sans"
-import '../global.scss';
+
+import Navbar from './navbar';
 import Footer from './footer';
 
+import '../index.scss';
 
-const Layout = ({children}) => (
-    <div className={style.layout}>
+const Layout = ({ children }) => (
+    <div>
         <Navbar />
-        <div className={style.background}></div>
-        <div className={style.inner}>
-            {children}
+        <div></div>
+        <div className="has-background-dark has-text-light">
+            <div className="container is-max-desktop" style={{ minHeight: '90vh' }}>
+                {children}
+            </div>
         </div>
         <Footer />
     </div>
 );
 
-export default Layout
+export default Layout;

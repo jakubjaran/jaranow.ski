@@ -1,12 +1,17 @@
 import React from 'react';
-import style from './post.module.scss';
-import {Link} from 'gatsby'
+import { Link } from 'gatsby';
 
-const Post = ({post}) => (
-    <div className={style.post}>
-        <Link to={`/posty/${post.fields.slug}`} className={style.link}>{post.frontmatter.title}</Link>
-        <p className={style.date}>{post.frontmatter.date}</p>
-        <p>{post.frontmatter.snippet} <Link to={`/posty/${post.fields.slug}`}>Czytaj dalej</Link></p>
+const Post = ({ post }) => (
+    <div className="card my-3 p-6 has-background-black has-text-light">
+        <header className="card-header px-6 py-4">
+            <Link className="has-text-primary has-text-weight-semibold is-size-3" to={`/posty/${post.fields.slug}`}>{post.frontmatter.title}</Link>
+        </header>
+        <div clasName="card-content">
+            <div className="px-6 py-3">
+                <p>{post.frontmatter.snippet}</p>
+                <Link className="button is-primary is-outlined mt-5 px-6" to={`/posty/${post.fields.slug}`}>Czytaj</Link>
+            </div>
+        </div>
     </div>
 );
 
