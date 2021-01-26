@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from 'gatsby';
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar is-black px-6 py-2">
+        <nav className="navbar is-black px-6 py-2 is-fixed-top">
             <div className="container is-max-desktop">
                 <div className="navbar-brand">
                     <Link className="navbar-item has-text-weight-bold has-text-light" to="/">jaranow<span className="has-text-primary">.</span>ski</Link>
@@ -21,7 +22,7 @@ const Navbar = () => {
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="navbarMenu" className="navbar-menu">
+                <div id="navbarMenu" className="navbar-menu has-background-black">
                     <div className="navbar-end">
                         <a className="navbar-item has-text-weight-medium has-text-light" href="https://github.com/jakubjaran">github</a>
                         <Link className="navbar-item has-text-weight-medium has-text-light" to="/omnie">o mnie</Link>

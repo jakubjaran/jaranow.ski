@@ -1,5 +1,8 @@
 @charset "utf-8";
 
 $dark: rgb(20,20,20);
+$body-background-color: $dark;
+$desktop: 900px;
+$body-color: hsl(0, 0%, 96%);
 
 @import "~bulma/bulma.sass";

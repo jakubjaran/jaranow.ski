@@ -9,12 +9,12 @@ const Home = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark
-        (sort: { fields: [frontmatter___date], order: DESC })
+        (sort: { fields: [frontmatter___id], order: DESC })
         {
         nodes {
           frontmatter {
             title
-            date
+            id
             snippet
           }
           fields {
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <Layout>
       <Head />
-      <div className="py-6">
+      <div>
         {posts.length > 0 ? posts.map(post => (
           <Post key={post.fields.slug} post={post} />
         )) : <h2>Jeszcze nic tu nie ma!</h2>}
