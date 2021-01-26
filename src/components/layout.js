@@ -7,7 +7,11 @@ import '../index.scss';
 
 const Layout = ({ children }) => {
 
-    document.body.classList.add('has-navbar-fixed-top');
+    const handleFixedNavbar = () => {
+        document.body.classList.add('has-navbar-fixed-top');
+    }
+
+    handleFixedNavbar();
 
     return (
         <div>
