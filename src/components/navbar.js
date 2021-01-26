@@ -12,7 +12,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar is-black px-6 py-2 is-fixed-top">
+        <nav className="navbar is-black px-3 py-2 is-fixed-top">
             <div className="container is-max-desktop">
                 <div className="navbar-brand">
                     <Link className="navbar-item has-text-weight-bold has-text-light" to="/">jaranow<span className="has-text-primary">.</span>ski</Link>

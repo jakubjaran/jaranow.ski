@@ -6,3 +6,22 @@ $desktop: 900px;
 $body-color: hsl(0, 0%, 96%);
 
 @import "~bulma/bulma.sass";
+
+h2 {
+    @extend .subtitle;
+    color: $primary;
+    @extend .pt-6;
+    @extend .has-text-weight-semibold;
+    @extend .is-size-4;
+}
+strong {
+    color: $primary;
+}
+p {
+    @extend .my-4;
+    line-height: 1.7;
+}
+
+.gatsby-resp-image-wrapper {
+    @extend .my-5;
+}

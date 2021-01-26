@@ -1,11 +1,13 @@
 import React from 'react';
-import Head from '../components/head';
+
 import Layout from '../components/layout';
+import Head from '../components/head';
+import Heading from '../components/heading';
 
 const Contact = () => (
     <Layout>
         <Head title="Kontakt" />
-        <h1>Kontakt</h1>
+        <Heading>Kontakt</Heading>
     </Layout>
 );
 
