@@ -4,6 +4,7 @@ $dark: rgb(20,20,20);
 $body-background-color: $dark;
 $desktop: 900px;
 $body-color: hsl(0, 0%, 96%);
+$navbar-item-hover-background-color: $dark;
 
 @import "~bulma/bulma.sass";
 

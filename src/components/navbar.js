@@ -16,11 +16,11 @@ const Navbar = () => {
             <div className="container is-max-desktop">
                 <div className="navbar-brand">
                     <Link className="navbar-item has-text-weight-bold has-text-light" to="/">jaranow<span className="has-text-primary">.</span>ski</Link>
-                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onClick={toggleMenu}>
+                    <button className="navbar-burger button is-black" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onClick={toggleMenu}>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                    </a>
+                    </button>
                 </div>
                 <div id="navbarMenu" className="navbar-menu has-background-black">
                     <div className="navbar-end">

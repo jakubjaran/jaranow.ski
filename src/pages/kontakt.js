@@ -15,25 +15,31 @@ const Contact = () => (
                     <form name="contact" method="POST" action="/success" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact" />
                         <div className="field">
-                            <label className="label has-text-primary">Kim jesteś?</label>
-                            <div className="control">
-                                <input className="input" type="text" name="name" placeholder="Imię" required />
-                            </div>
+                            <label className="label has-text-primary">
+                                Kim jesteś?
+                                <div className="control mt-2">
+                                    <input className="input" type="text" name="name" placeholder="Imię" required />
+                                </div>
+                            </label>
                         </div>
                         <div className="field">
-                            <label className="label has-text-primary">Twój email</label>
-                            <div className="control">
-                                <input className="input" type="email" name="email" placeholder="Email" required />
-                            </div>
+                            <label className="label has-text-primary">
+                                Twój email
+                                <div className="control mt-2">
+                                    <input className="input" type="email" name="email" placeholder="Email" required />
+                                </div>
+                            </label>
                         </div>
                         <div className="field">
-                            <label className="label has-text-primary">Wiadomość</label>
-                            <div className="control">
-                                <textarea className="textarea" placeholder="Wiadomość" name="message" required></textarea>
-                            </div>
+                            <label className="label has-text-primary">
+                                Wiadomość
+                                <div className="control mt-2">
+                                    <textarea className="textarea" placeholder="Wiadomość" name="message" required></textarea>
+                                </div>
+                            </label>
                         </div>
                         <div className="field">
-                            <div className="control">
+                            <div className="control mt-5">
                                 <button className="button is-primary has-text-weight-bold">Wyślij</button>
                             </div>
                         </div>
