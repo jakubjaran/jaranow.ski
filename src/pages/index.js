@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <Head />
+      <Head title="Blog" />
       <div>
         {posts.length > 0 ? posts.map(post => (
           <Post key={post.fields.slug} post={post} />
