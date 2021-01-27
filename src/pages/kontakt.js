@@ -12,7 +12,7 @@ const Contact = () => (
         <div className="card my-6 py-4 has-background-black has-text-light">
             <div className="card-content">
                 <div className="px-5">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" action="/success" data-netlify="true">
                         <div className="field">
                             <label className="label has-text-primary">Kim jesteś?</label>
                             <div className="control">
