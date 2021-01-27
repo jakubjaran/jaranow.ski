@@ -13,6 +13,7 @@ const Contact = () => (
             <div className="card-content">
                 <div className="px-5">
                     <form name="contact" method="POST" action="/success" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div className="field">
                             <label className="label has-text-primary">Kim jesteś?</label>
                             <div className="control">
