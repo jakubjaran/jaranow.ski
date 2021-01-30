@@ -14,6 +14,7 @@ const Home = () => {
         nodes {
           frontmatter {
             title
+            subtitle
             id
             snippet
           }

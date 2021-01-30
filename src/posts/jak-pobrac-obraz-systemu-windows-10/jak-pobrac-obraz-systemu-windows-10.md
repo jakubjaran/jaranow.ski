@@ -1,5 +1,6 @@
 ---
 title: "Jak pobrać obraz systemu Windows 10 (Plik ISO)"
+subtitle: "Poradnik"
 id: 1
 snippet: "W tym poradniku pokażę Ci skąd i w jaki sposób pobrać plik ISO z obrazem systemu Windows 10. Będzie on nam potrzebny do zainstalowania Windowsa."
 ---
@@ -8,7 +9,7 @@ W tym poradniku pokażę Ci skąd i w jaki sposób pobrać plik ISO z obrazem sy
 
 ## Krok 1 - Źródło
 
-W celu pobrania wspomnianego wyżej pliku musimy przejść na stronę Microsoftu.
+W celu pobrania wspomnianego wyżej pliku musimy przejść na stronę Microsoftu:
 
 ```
 https://www.microsoft.com/pl-pl/software-download/windows10
@@ -39,18 +40,18 @@ Naszym oczom ukaże się mniej więcej coś takiego:
 
 ![Symulacja telefonu](./4.png)
 
-Teraz wystarczy, że odświeżymy stronę i już mamy możliwość pobrania pliku ISO.
+Wystarczy, że odświeżymy stronę i już mamy możliwość pobrania pliku ISO.
 (Jeśli strona nie otwiera się w wersji mobilnej upewnij się, że ustawione jest urządzenie mobilne np. Galaxy S9).
 
 Teraz możemy wyłączyć już tryb telefonu i narzędzia developerskie.
 
 ## Krok 4 - Pobieranie ISO
 
-Teraz wybieramy najnowszą wersję Windowsa 10 oraz język systemu. Nasze wybory potwierdzamy przyciskiem **Potwierdź**.
+Następnie wybieramy najnowszą wersję Windowsa 10 oraz język systemu. Nasze wybory potwierdzamy przyciskiem **Potwierdź**.
 
 ![Wybór](./5.png)
 
-Czekamy chwilę, następnie klikamy przycisk **64-bit Pobierz**
+Czekamy chwilę i klikamy przycisk **64-bit Pobierz**
 
 ![Wersja](./6.png)
 
