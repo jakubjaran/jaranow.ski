@@ -54,4 +54,4 @@ Czekamy chwilę, następnie klikamy przycisk **64-bit Pobierz**
 
 ![Wersja](./6.png)
 
-Wskazujemy miejsce, gdzie ma pobrać się nasz plik i voilà! Mamy plik ISO. W następnym poradniku pokażę Ci jak stworzyć bootowalny pendrive, czyli taki, który pozwoli nam na instalację systemu na naszym komputerze lub laptopie.
+Wskazujemy miejsce, gdzie ma pobrać się nasz plik i voilà! Mamy plik ISO. W [następnym poradniku](/posty/jak-stworzyc-bootowalny-pendrive) pokażę Ci jak stworzyć bootowalny pendrive, czyli taki, który pozwoli nam na instalację systemu na naszym komputerze lub laptopie.
