@@ -1,12 +1,12 @@
 import React from 'react';
-import Head from '../components/head';
+import SEO from '../components/SEO';
 import Layout from '../components/layout';
 
 const Page404 = () => (
-    <Layout>
-        <Head title="Błędny adres!" />
-        <h2>Ooops chyba się zgubiłeś!</h2>
-    </Layout>
+  <Layout>
+    <SEO title="Błędny adres" />
+    <h2>Uuuups chyba się zgubiłeś!</h2>
+  </Layout>
 );
 
 export default Page404;

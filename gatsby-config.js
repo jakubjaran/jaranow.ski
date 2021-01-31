@@ -1,4 +1,12 @@
 module.exports = {
+  siteMetadata: {
+    title: 'jaranow.ski',
+    titleTemplate: '%s · jaranow.ski',
+    description:
+      'Blog osobisty - Jakub Jaranowski. Informatyka - poradniki, naprawy i projekty!',
+    url: 'https://jaranow.ski',
+    image: '/jaranowski.png',
+  },
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -29,11 +37,11 @@ module.exports = {
               quality: 100,
               maxWidth: 900,
               linkImagesToOriginal: false,
-            }
-          }
-        ]
-      }
+            },
+          },
+        ],
+      },
     },
     `gatsby-plugin-catch-links`,
   ],
-}
+};
